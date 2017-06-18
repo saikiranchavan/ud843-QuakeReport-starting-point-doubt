@@ -76,6 +76,8 @@ private static final String LOG_TAG=AndroidFlavorAdapter.class.getSimpleName();
         //TextView cityText=(TextView)listItemView.findViewById(R.id.city);
         String string=currentAndroidFlavor.getCity();
         String[] parts =string.split("(?<=of)");
+        int l=parts.length;
+
         String part1 =parts[0];
         String part2 =parts[1];
         holder.cityText.setText(part1);
